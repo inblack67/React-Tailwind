@@ -6,12 +6,17 @@ import Home from './components/Home';
 
 
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
 
+  useEffect(() => {
+    document.body.classList.add('bg-red-500');
+  }, [])
+
   return (
     <BitcoinState>
-      <div className="bg-red-500">
+      <div className="">
         <Router>
           <Switch>
             <Route path='/' component={Home} />
