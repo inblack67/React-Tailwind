@@ -11,7 +11,7 @@ function App() {
 
   return (
     <BitcoinState>
-      <div className="container">
+      <div className="bg-red-500">
         <Router>
           <Switch>
             <Route path='/' component={Home} />
